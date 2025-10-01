@@ -59,6 +59,13 @@ h1, h2 {
   font-size: 18px;
 }
 
+.item:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+
 .flavor, .dessert {
   text-align: left;
   width: 75%;
@@ -93,4 +100,18 @@ a:hover {
 
 a:active {
   color: brown;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 95%;
+    padding: 15px;
+  }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
